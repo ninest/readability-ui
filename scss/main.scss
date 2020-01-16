@@ -1,0 +1,21 @@
+@import './globals.scss';
+
+// Fix for FontAwesome fonts
+*:not(svg) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  // letter-spacing: 0.3px;
+}
+svg {
+  font-size: unset;
+}
+
+.wrapper {
+  padding: var(--main-padding) 20%;
+
+  @include mobile-screen {
+    padding: var(--main-padding) 5%;
+  }
+}

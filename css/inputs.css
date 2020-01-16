@@ -1,0 +1,36 @@
+button {
+  padding: var(--input-padding);
+  border: none;
+  border-radius: var(--input-border-radius);
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  padding: var(--input-padding) calc(2 * var(--input-padding));
+  background-color: rgba(0, 0, 255, 0.18);
+  color: blue;
+}
+
+button.dark-gray {
+  background-color: rgba(44, 44, 44, 0.18);
+  color: #2c2c2c;
+}
+
+button.red {
+  background-color: rgba(255, 37, 0, 0.18);
+  color: #ff2500;
+}
+
+button.green {
+  background-color: rgba(73, 173, 21, 0.18);
+  color: #53b71f;
+}
+
+button.white {
+  background-color: rgba(64, 64, 64, 0.18);
+  color: #787878;
+}
+
+button + button {
+  margin-left: 0.5em;
+}
+/*# sourceMappingURL=inputs.css.map */

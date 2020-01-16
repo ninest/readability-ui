@@ -1,0 +1,56 @@
+:root {
+  --main-font-size: 18px;
+  --side-padding: 30px;
+  --main-padding: 30px;
+  --dense-padding: 18px;
+  --page-padding-side: 5%;
+  --page-padding: var(--main-padding) var(--page-padding-side);
+  --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+  --main-border: 1px solid #ccc;
+  --input-padding: 12px;
+  --input-border: var(--main-border);
+  --input-border-focus: 1px solid black;
+  --input-border-radius: 7px;
+  --input-text-color: #555;
+  --input-text-color-focus: black;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --main-font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --side-padding: 24px;
+    --main-padding: 24px;
+    --dense-padding: 18px;
+    --page-padding-side: 5%;
+    --page-padding: var(--main-padding) var(--page-padding-side);
+    --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+  }
+}
+
+*:not(svg) {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+svg {
+  font-size: unset;
+}
+
+.wrapper {
+  padding: var(--main-padding) 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    padding: var(--main-padding) 5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

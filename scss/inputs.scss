@@ -1,0 +1,49 @@
+// an "input" is a button or text area
+@mixin input {
+  padding: var(--input-padding);
+  border: none;
+  border-radius: var(--input-border-radius);
+
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+@mixin button {
+  @include input;
+
+  // override padding, because more horizintal padding for button
+  padding: var(--input-padding) calc(2 * var(--input-padding));
+
+  background-color: rgba(0,0,255,0.18);
+  color: rgb(0,0,255);
+
+  &.dark-gray {
+    background-color: rgba(44,44,44,0.18);
+    color: rgb(44,44,44);
+  }
+
+  &.red {
+    background-color: rgba(255,37,0,0.18);
+    color: rgb(255,37,0);
+  }
+
+  &.green {
+    background-color: rgba(73,173,21,0.18);
+    color: rgb(83,183,31);
+  }
+
+  &.white {
+    background-color: rgba(64,64,64,0.18);
+    color: rgb(120,120,120);
+  }
+}
+
+button {
+  @include button;
+
+  // for groups
+  + button {
+    margin-left: 0.5em;
+  }
+}
