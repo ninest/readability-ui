@@ -5,9 +5,11 @@ button {
   font-weight: 600;
   font-size: 1.1em;
   letter-spacing: 0.5px;
-  padding: var(--input-padding) calc(2 * var(--input-padding));
+  padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
+  line-height: 1.4;
+  display: inline-block;
 }
 
 button.dark-gray {
@@ -43,9 +45,11 @@ a.button {
   font-weight: 600;
   font-size: 1.1em;
   letter-spacing: 0.5px;
-  padding: var(--input-padding) calc(2 * var(--input-padding));
+  padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
+  line-height: 1.4;
+  display: inline-block;
 }
 
 a.button.dark-gray {

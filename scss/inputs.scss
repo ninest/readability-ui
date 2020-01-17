@@ -13,7 +13,7 @@
   @include input;
 
   // override padding, because more horizintal padding for button
-  padding: var(--input-padding) calc(2 * var(--input-padding));
+  padding: var(--input-padding) calc(3.4 * var(--input-padding));
 
   background-color: rgba(0,0,255,0.18);
   color: rgb(0,0,255);
@@ -42,6 +42,9 @@
   + button , + a.button {
     margin-left: 0.5em;
   }
+
+  line-height: 1.4;
+  display: inline-block;
 }
 
 button {
@@ -52,8 +55,6 @@ a.button {
   text-decoration: none;
   color: unset;
   // no underline, no blue
-
-  // display: block;
 
   @include button;
 }
