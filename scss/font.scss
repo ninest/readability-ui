@@ -25,7 +25,7 @@ h2 {
   font-size: 2.1em; 
   // border-bottom: var(--main-border);
 }
-h3 { font-size: 1.7em; }
+h3 { font-size: 1.6em; }
 
 h1:not(:first-child),
 h2:not(:first-child),
@@ -36,12 +36,12 @@ h6:not(:first-child) {
   margin-top: 0.8em;
 }
 
-@mixin code {
-  font-family: monospace;
-  background-color: #333;
-  color: #bbb;
+ul, ol {
+  margin-left: 25px;
+}
 
-  border-radius: 3px;
+@mixin code {
+  font-family: Menlo, monospace;
 }
 
 p, pre, blockquote, table {
@@ -52,12 +52,16 @@ p, pre, blockquote, table {
 
   code {
     @include code;
-    padding: 1px 3px;
+    color: green;
+    // padding: 1px 3px;
   }
 }
 
 pre {
   @include code;
+  background-color: #333;
+  color: #bbb;
+  border-radius: 3px;
   padding: var(--dense-padding);
 }
 

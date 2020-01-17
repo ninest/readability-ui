@@ -2,6 +2,11 @@
 > Simple CSS boilerplate
 
 ## Includes
-- Buttons
+- Buttons and link buttons
+- lists
+  - Ordered
+  - Unordered
+  - Definition
 - Code blocks and inline code
 - Blockquotes
+- Tables

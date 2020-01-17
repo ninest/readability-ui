@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 h1:not(:first-child),
@@ -39,6 +39,10 @@ h6:not(:first-child) {
   margin-top: 0.8em;
 }
 
+ul, ol {
+  margin-left: 25px;
+}
+
 p, pre, blockquote, table {
   color: #333;
 }
@@ -48,15 +52,12 @@ p + p, p + pre, p + blockquote, p + table, pre + p, pre + pre, pre + blockquote,
 }
 
 p code, pre code, blockquote code, table code {
-  font-family: monospace;
-  background-color: #333;
-  color: #bbb;
-  border-radius: 3px;
-  padding: 1px 3px;
+  font-family: Menlo, monospace;
+  color: green;
 }
 
 pre {
-  font-family: monospace;
+  font-family: Menlo, monospace;
   background-color: #333;
   color: #bbb;
   border-radius: 3px;
