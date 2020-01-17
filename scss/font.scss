@@ -44,10 +44,10 @@ h6:not(:first-child) {
   border-radius: 3px;
 }
 
-p, pre, blockquote {
+p, pre, blockquote, table {
   color: #333;
-  + p , + pre , + blockquote{
-    margin-top: 0.8em;
+  + p , + pre , + blockquote , + table {
+    margin-top: 0.9em;
   }
 
   code {
@@ -71,4 +71,15 @@ blockquote {
   border-radius: 3px;
 
   font-style: italic;
+}
+
+table {
+  width: 100%;
+  overflow: scroll;
+
+  th, td {
+    border-bottom: var(--main-border);
+    padding: calc(var(--dense-padding) *0.5);
+  }
+
 }

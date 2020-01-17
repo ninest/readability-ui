@@ -39,15 +39,15 @@ h6:not(:first-child) {
   margin-top: 0.8em;
 }
 
-p, pre, blockquote {
+p, pre, blockquote, table {
   color: #333;
 }
 
-p + p, p + pre, p + blockquote, pre + p, pre + pre, pre + blockquote, blockquote + p, blockquote + pre, blockquote + blockquote {
-  margin-top: 0.8em;
+p + p, p + pre, p + blockquote, p + table, pre + p, pre + pre, pre + blockquote, pre + table, blockquote + p, blockquote + pre, blockquote + blockquote, blockquote + table, table + p, table + pre, table + blockquote, table + table {
+  margin-top: 0.9em;
 }
 
-p code, pre code, blockquote code {
+p code, pre code, blockquote code, table code {
   font-family: monospace;
   background-color: #333;
   color: #bbb;
@@ -70,5 +70,15 @@ blockquote {
   padding-left: var(--dense-padding);
   border-radius: 3px;
   font-style: italic;
+}
+
+table {
+  width: 100%;
+  overflow: scroll;
+}
+
+table th, table td {
+  border-bottom: var(--main-border);
+  padding: calc(var(--dense-padding) *0.5);
 }
 /*# sourceMappingURL=font.css.map */
