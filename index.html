@@ -28,7 +28,8 @@
 <body>
   <div class="wrapper heading">
     <h1> Readability UI </h1>
-    <button class="white"> GitHub </button>
+    <!-- <button class="white"> GitHub </button> -->
+    <a target="_blank" href="https://github.com/themindstorm/readability-ui" class="button white">GitHub</a>
   </div>
   <div class="wrapper">
     <article>
@@ -58,14 +59,27 @@
         <button class="red">Button</button>
       </p>
 
+      <p>
+        And here is a link button:
+      </p>
+
+      <p>
+        <a href="#" class="button">Go to link</a>
+      </p>
+
       <p> Buttons can also be grouped: </p>
 
       <p>
         <button> First </button>
         <button class="dark-gray"> Second </button>
-        <button> First </button>
+        <a href="#" class="button">Link</a>
         <button class="dark-gray"> Second </button>
         <button class="green"> Third </button>
+      </p>
+
+      <p>
+        Note: currently a problem with link buttons (<code>a.link</code>)
+        due to padding. The paragraph spacing for a <code>p</code> tag with a link button is lower for some reason.
       </p>
       
       <h2> Code blocks</h2>

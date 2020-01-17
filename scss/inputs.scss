@@ -37,13 +37,23 @@
     background-color: rgba(64,64,64,0.18);
     color: rgb(120,120,120);
   }
+
+  // for groups
+  + button , + a.button {
+    margin-left: 0.5em;
+  }
 }
 
 button {
   @include button;
+}
 
-  // for groups
-  + button {
-    margin-left: 0.5em;
-  }
+a.button {
+  text-decoration: none;
+  color: unset;
+  // no underline, no blue
+
+  // display: block;
+
+  @include button;
 }
