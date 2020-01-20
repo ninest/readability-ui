@@ -4,37 +4,23 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   // font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 // import InterUI font
 
 
+// TODO: cleanup and splitting
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   hyphens: auto;
   font-weight: 700;
 }
-h1 {
-  font-weight: 900;
-}
-
-h1 { font-size: 3em; }
-h2 { 
-  font-size: 1.7em; 
-  // border-bottom: var(--main-border);
-}
+h1 { font-weight: 900; font-size: 3em; }
+h2 { font-size: 1.7em; }
 h3 { font-size: 1.2em; }
 
-// h1:not(:first-child),
-// h2:not(:first-child),
-// h3:not(:first-child),
-// h4:not(:first-child),
-// h5:not(:first-child),
-// h6:not(:first-child) {
-//   margin-top: 0.8em;
-// }
 
 ul, ol {
   margin-left: 25px;
@@ -44,21 +30,41 @@ ul, ol {
   font-family: Menlo, monospace;
 }
 
-p, pre, blockquote, table, ul, ol, form {
+p, pre, blockquote, table, ul, ol, form, img, figure {
   color: #333;
   margin-bottom: 1.1em;
 
   +h2, +h3, +h4, +h5, +h6 {
-    margin-top: 0.9em;
+    margin-top: 1.1em;
     // color: red;
+  }
+}
+
+// no space below p if inside blockquote
+blockquote p {
+  margin-bottom: unset;
+}
+
+// no space below img if inside fig
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  img {
+    margin-bottom: unset;
+  }
+
+  figcaption {
+    font-style: italic;
   }
 }
 
 h2, h3, h4, h5, h6 {
   // these elements require extra breathing space
-  + blockquote, + pre, + form {
+  + blockquote, + pre, + form, + img, + figure {
     // color: red;
-    margin-top: 0.9em;
+    margin-top: 1em;
   }
 }
 
@@ -66,7 +72,6 @@ h2, h3, h4, h5, h6 {
 code {
   @include code;
   color: green;
-  overflow-x: scroll;
   // padding: 1px 3px;
 }
 pre {
@@ -75,6 +80,9 @@ pre {
   color: #bbb;
   border-radius: 3px;
   padding: var(--dense-padding);
+
+  // horizontal scrolling
+  overflow-x: scroll;
 }
 
 blockquote {
@@ -97,4 +105,9 @@ table {
     padding: calc(var(--dense-padding) *0.5);
   }
 
+}
+
+img {
+  max-width: 100%;
+  border-radius: 3px;
 }

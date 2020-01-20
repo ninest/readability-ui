@@ -29,13 +29,18 @@
   }
 
   &.green {
-    background-color: rgba(73,173,21,0.18);
-    color: rgb(83,183,31);
+    background-color: rgba(66, 148, 22, 0.18);
+    color: rgb(41, 110, 3);
   }
 
   &.white {
     background-color: rgba(64,64,64,0.18);
     color: rgb(120,120,120);
+  }
+
+  &.black {
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(200,200,200);
   }
 
   // for groups

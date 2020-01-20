@@ -12,6 +12,9 @@
 - Blockquotes
 - Tables
 - Forms
+- Images
+  - Captions
+  - Centering images
 
 ## Generating output
 All the CSS files can be combined to create `output/all.css` using the command:
@@ -19,3 +22,6 @@ All the CSS files can be combined to create `output/all.css` using the command:
 ```
 cat css/normalize.css css/main.css css/globals.css css/inputs.css css/font.css > output/all.css
 ```
+
+## License
+MIT

@@ -16,9 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 900;
-}
-
-h1 {
   font-size: 3em;
 }
 
@@ -34,23 +31,40 @@ ul, ol {
   margin-left: 25px;
 }
 
-p, pre, blockquote, table, ul, ol, form {
+p, pre, blockquote, table, ul, ol, form, img, figure {
   color: #333;
   margin-bottom: 1.1em;
 }
 
-p + h2, p + h3, p + h4, p + h5, p + h6, pre + h2, pre + h3, pre + h4, pre + h5, pre + h6, blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5, blockquote + h6, table + h2, table + h3, table + h4, table + h5, table + h6, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, form + h2, form + h3, form + h4, form + h5, form + h6 {
-  margin-top: 0.9em;
+p + h2, p + h3, p + h4, p + h5, p + h6, pre + h2, pre + h3, pre + h4, pre + h5, pre + h6, blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5, blockquote + h6, table + h2, table + h3, table + h4, table + h5, table + h6, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, form + h2, form + h3, form + h4, form + h5, form + h6, img + h2, img + h3, img + h4, img + h5, img + h6, figure + h2, figure + h3, figure + h4, figure + h5, figure + h6 {
+  margin-top: 1.1em;
 }
 
-h2 + blockquote, h2 + pre, h2 + form, h3 + blockquote, h3 + pre, h3 + form, h4 + blockquote, h4 + pre, h4 + form, h5 + blockquote, h5 + pre, h5 + form, h6 + blockquote, h6 + pre, h6 + form {
-  margin-top: 0.9em;
+blockquote p {
+  margin-bottom: unset;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+figure img {
+  margin-bottom: unset;
+}
+
+figure figcaption {
+  font-style: italic;
+}
+
+h2 + blockquote, h2 + pre, h2 + form, h2 + img, h2 + figure, h3 + blockquote, h3 + pre, h3 + form, h3 + img, h3 + figure, h4 + blockquote, h4 + pre, h4 + form, h4 + img, h4 + figure, h5 + blockquote, h5 + pre, h5 + form, h5 + img, h5 + figure, h6 + blockquote, h6 + pre, h6 + form, h6 + img, h6 + figure {
+  margin-top: 1em;
 }
 
 code {
   font-family: Menlo, monospace;
   color: green;
-  overflow-x: scroll;
 }
 
 pre {
@@ -59,6 +73,7 @@ pre {
   color: #bbb;
   border-radius: 3px;
   padding: var(--dense-padding);
+  overflow-x: scroll;
 }
 
 blockquote {
@@ -77,5 +92,10 @@ table {
 table th, table td {
   border-bottom: var(--main-border);
   padding: calc(var(--dense-padding) *0.5);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=font.css.map */

@@ -23,13 +23,18 @@ button.red, input[type=submit].red {
 }
 
 button.green, input[type=submit].green {
-  background-color: rgba(73, 173, 21, 0.18);
-  color: #53b71f;
+  background-color: rgba(66, 148, 22, 0.18);
+  color: #296e03;
 }
 
 button.white, input[type=submit].white {
   background-color: rgba(64, 64, 64, 0.18);
   color: #787878;
+}
+
+button.black, input[type=submit].black {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #c8c8c8;
 }
 
 button + button, button + a.button, input[type=submit] + button, input[type=submit] + a.button {
@@ -63,13 +68,18 @@ a.button.red {
 }
 
 a.button.green {
-  background-color: rgba(73, 173, 21, 0.18);
-  color: #53b71f;
+  background-color: rgba(66, 148, 22, 0.18);
+  color: #296e03;
 }
 
 a.button.white {
   background-color: rgba(64, 64, 64, 0.18);
   color: #787878;
+}
+
+a.button.black {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #c8c8c8;
 }
 
 a.button + button, a.button + a.button {
