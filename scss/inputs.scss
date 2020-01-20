@@ -47,7 +47,7 @@
   display: inline-block;
 }
 
-button {
+button, input[type=submit] {
   @include button;
 }
 
@@ -57,4 +57,33 @@ a.button {
   // no underline, no blue
 
   @include button;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type=text] {
+  @include input;
+  // border: var(--main-border);
+  border: 1px solid rgba(0,0,0,0.9);
+  background-color: #eee;
+
+  width: 100%;
+  display: block;
+
+  &:hover, &:focus {
+    border: 2px solid blue;
+    outline: none;
+  }
+}
+
+form {
+  * + * {
+    margin-top: 1em;
+  }
 }

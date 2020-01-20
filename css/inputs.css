@@ -1,4 +1,4 @@
-button {
+button, input[type=submit] {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
@@ -12,27 +12,27 @@ button {
   display: inline-block;
 }
 
-button.dark-gray {
+button.dark-gray, input[type=submit].dark-gray {
   background-color: rgba(44, 44, 44, 0.18);
   color: #2c2c2c;
 }
 
-button.red {
+button.red, input[type=submit].red {
   background-color: rgba(255, 37, 0, 0.18);
   color: #ff2500;
 }
 
-button.green {
+button.green, input[type=submit].green {
   background-color: rgba(73, 173, 21, 0.18);
   color: #53b71f;
 }
 
-button.white {
+button.white, input[type=submit].white {
   background-color: rgba(64, 64, 64, 0.18);
   color: #787878;
 }
 
-button + button, button + a.button {
+button + button, button + a.button, input[type=submit] + button, input[type=submit] + a.button {
   margin-left: 0.5em;
 }
 
@@ -74,5 +74,45 @@ a.button.white {
 
 a.button + button, a.button + a.button {
   margin-left: 0.5em;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=text] {
+  padding: var(--input-padding);
+  border: none;
+  border-radius: var(--input-border-radius);
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: #eee;
+  width: 100%;
+  display: block;
+}
+
+input[type=text]:hover, input[type=text]:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+form * + * {
+  margin-top: 1em;
 }
 /*# sourceMappingURL=inputs.css.map */

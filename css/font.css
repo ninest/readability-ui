@@ -23,37 +23,34 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1em;
+  font-size: 1.7em;
 }
 
 h3 {
-  font-size: 1.6em;
-}
-
-h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child),
-h5:not(:first-child),
-h6:not(:first-child) {
-  margin-top: 0.8em;
+  font-size: 1.2em;
 }
 
 ul, ol {
   margin-left: 25px;
 }
 
-p, pre, blockquote, table {
+p, pre, blockquote, table, ul, ol {
   color: #333;
+  margin-bottom: 1.1em;
 }
 
-p + p, p + pre, p + blockquote, p + table, pre + p, pre + pre, pre + blockquote, pre + table, blockquote + p, blockquote + pre, blockquote + blockquote, blockquote + table, table + p, table + pre, table + blockquote, table + table {
+p + h2, p + h3, p + h4, p + h5, p + h6, pre + h2, pre + h3, pre + h4, pre + h5, pre + h6, blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5, blockquote + h6, table + h2, table + h3, table + h4, table + h5, table + h6, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6 {
   margin-top: 0.9em;
 }
 
-p code, pre code, blockquote code, table code {
+h2 + blockquote, h2 + pre, h2 + form, h3 + blockquote, h3 + pre, h3 + form, h4 + blockquote, h4 + pre, h4 + form, h5 + blockquote, h5 + pre, h5 + form, h6 + blockquote, h6 + pre, h6 + form {
+  margin-top: 0.9em;
+}
+
+code {
   font-family: Menlo, monospace;
   color: green;
+  overflow-x: scroll;
 }
 
 pre {
@@ -66,11 +63,10 @@ pre {
 
 blockquote {
   background-color: rgba(0, 0, 0, 0.1);
-  border-left: 5px solid blue;
   padding: calc(var(--dense-padding) * 0.5);
   padding-left: var(--dense-padding);
   border-radius: 3px;
-  font-style: italic;
+  font-weight: 500;
 }
 
 table {

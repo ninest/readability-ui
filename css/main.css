@@ -7,7 +7,7 @@
   --page-padding: var(--main-padding) var(--page-padding-side);
   --page-dense-padding: var(--dense-padding) var(--page-padding-side);
   --main-border: 1px solid #ccc;
-  --input-padding: 12px;
+  --input-padding:8px;
   --input-border: var(--main-border);
   --input-border-focus: 1px solid black;
   --input-border-radius: 7px;
