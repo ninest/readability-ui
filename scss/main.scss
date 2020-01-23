@@ -12,6 +12,18 @@ svg {
   font-size: unset;
 }
 
+
+
+body {
+  background-color: white;
+
+  // cannot use mizin because [data-theme] is applied to body
+  &[data-theme='dark'] {
+    background-color: #19191a;
+  }
+}
+
+
 .wrapper {
   padding: var(--main-padding) 20%;
 

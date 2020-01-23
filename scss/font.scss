@@ -1,3 +1,5 @@
+@import './globals.scss';
+
 html {
   line-height: 1.6;
   font-size: var(--main-font-size);
@@ -16,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   hyphens: auto;
   font-weight: 700;
+  // color: red;
+
+  @include dark-theme {
+    color: #ddd;
+  }
 }
 h1 { font-weight: 900; font-size: 3em; }
 h2 { font-size: 1.7em; }
@@ -37,6 +44,20 @@ p, pre, blockquote, table, ul, ol, form, img, figure {
   +h2, +h3, +h4, +h5, +h6 {
     margin-top: 1.1em;
     // color: red;
+  }
+
+  // links should be bold and no underline unless hover
+  a {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include dark-theme {
+    color: #ccc;
   }
 }
 

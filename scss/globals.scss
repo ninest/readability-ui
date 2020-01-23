@@ -1,10 +1,17 @@
 // mixins and screen sizes
+// for dark theme
+@mixin dark-theme {
+  [data-theme='dark'] & {
+    @content
+  }
+}
 $phone: 700px;
 @mixin mobile-screen {
   @media screen and (max-width: $phone) {
     @content
   }
 }
+
 
 // font sizes
 :root {

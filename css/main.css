@@ -44,6 +44,14 @@ svg {
   font-size: unset;
 }
 
+body {
+  background-color: white;
+}
+
+body[data-theme='dark'] {
+  background-color: #19191a;
+}
+
 .wrapper {
   padding: var(--main-padding) 20%;
 }
