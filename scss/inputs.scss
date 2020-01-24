@@ -1,4 +1,5 @@
 @import './globals.scss';
+@import './font_families.scss';
 
 // an "input" is a button or text area
 @mixin input {
@@ -6,9 +7,12 @@
   border: none;
   border-radius: var(--input-border-radius);
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+
+  // will always be sansserif
+  font-family: $sansserif !important;
 }
 
 @mixin button {

@@ -2,6 +2,11 @@
 > Simple CSS boilerplate
 
 ## Includes
+### Features
+- Light/dark theming
+- Serif and sans-serif font
+
+### Elements
 - Buttons and link buttons
   - Button groups
 - lists

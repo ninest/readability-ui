@@ -46,10 +46,15 @@ h1, h2, h3, h4, h5, h6 {
       -ms-hyphens: auto;
           hyphens: auto;
   font-weight: 700;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 [data-theme='dark'] h1, [data-theme='dark'] h2, [data-theme='dark'] h3, [data-theme='dark'] h4, [data-theme='dark'] h5, [data-theme='dark'] h6 {
   color: #ddd;
+}
+
+[data-font='serif'] h1, [data-font='serif'] h2, [data-font='serif'] h3, [data-font='serif'] h4, [data-font='serif'] h5, [data-font='serif'] h6 {
+  font-family: unset;
 }
 
 h1 {
@@ -114,12 +119,12 @@ h2 + blockquote, h2 + pre, h2 + form, h2 + img, h2 + figure, h3 + blockquote, h3
 }
 
 code {
-  font-family: Menlo, monospace;
+  font-family: Menlo, monospace !important;
   color: green;
 }
 
 pre {
-  font-family: Menlo, monospace;
+  font-family: Menlo, monospace !important;
   background-color: #333;
   color: #bbb;
   border-radius: 3px;

@@ -5,6 +5,11 @@
     @content
   }
 }
+@mixin serif-font {
+  [data-font='serif'] &  {
+    @content
+  }
+}
 $phone: 700px;
 @mixin mobile-screen {
   @media screen and (max-width: $phone) {

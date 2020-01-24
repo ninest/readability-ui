@@ -1,12 +1,18 @@
 @import './globals.scss';
+@import './font_families.scss';
 
 // Fix for FontAwesome fonts
 *:not(svg) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  // letter-spacing: 0.3px;
+  font-family: $sansserif;
+
+  @include serif-font {
+    @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap');
+    font-family: $serif; 
+  }
+
 }
 svg {
   font-size: unset;

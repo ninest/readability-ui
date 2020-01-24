@@ -36,9 +36,10 @@ button, input[type=submit] {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
@@ -81,9 +82,10 @@ a.button {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
@@ -142,9 +144,10 @@ input[type=text] {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   border: 1px solid rgba(0, 0, 0, 0.9);
   background-color: #eee;
   width: 100%;

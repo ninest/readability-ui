@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/font_families.scss"
+    ],
+    "names": [],
+    "file": "font_families.css"
+}

@@ -1,4 +1,5 @@
 @import './globals.scss';
+@import './font_families.scss';
 
 html {
   line-height: 1.6;
@@ -20,8 +21,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   // color: red;
 
+  // will always be sansserif
+  font-family: $sansserif !important;
+
   @include dark-theme {
     color: #ddd;
+  }
+
+  @include serif-font {
+    font-family: unset;;
   }
 }
 h1 { font-weight: 900; font-size: 3em; }
@@ -34,7 +42,7 @@ ul, ol {
 }
 
 @mixin code {
-  font-family: Menlo, monospace;
+  font-family: $code !important;
 }
 
 p, pre, blockquote, table, ul, ol, form, img, figure {

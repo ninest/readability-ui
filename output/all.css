@@ -346,7 +346,8 @@ template {
 
 [hidden] {
   display: none;
-}:root {
+}@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap");
+:root {
   --main-font-size: 18px;
   --side-padding: 30px;
   --main-padding: 30px;
@@ -385,7 +386,11 @@ template {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-font='serif'] *:not(svg) {
+  font-family: "PT Serif", serif;
 }
 
 svg {
@@ -480,9 +485,10 @@ button, input[type=submit] {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
@@ -525,9 +531,10 @@ a.button {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   padding: var(--input-padding) calc(3.4 * var(--input-padding));
   background-color: rgba(0, 0, 255, 0.18);
   color: blue;
@@ -586,9 +593,10 @@ input[type=text] {
   padding: var(--input-padding);
   border: none;
   border-radius: var(--input-border-radius);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0.5px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   border: 1px solid rgba(0, 0, 0, 0.9);
   background-color: #eee;
   width: 100%;
@@ -656,10 +664,15 @@ h1, h2, h3, h4, h5, h6 {
       -ms-hyphens: auto;
           hyphens: auto;
   font-weight: 700;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 [data-theme='dark'] h1, [data-theme='dark'] h2, [data-theme='dark'] h3, [data-theme='dark'] h4, [data-theme='dark'] h5, [data-theme='dark'] h6 {
   color: #ddd;
+}
+
+[data-font='serif'] h1, [data-font='serif'] h2, [data-font='serif'] h3, [data-font='serif'] h4, [data-font='serif'] h5, [data-font='serif'] h6 {
+  font-family: unset;
 }
 
 h1 {
@@ -724,12 +737,12 @@ h2 + blockquote, h2 + pre, h2 + form, h2 + img, h2 + figure, h3 + blockquote, h3
 }
 
 code {
-  font-family: Menlo, monospace;
+  font-family: Menlo, monospace !important;
   color: green;
 }
 
 pre {
-  font-family: Menlo, monospace;
+  font-family: Menlo, monospace !important;
   background-color: #333;
   color: #bbb;
   border-radius: 3px;
