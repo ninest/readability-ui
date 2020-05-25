@@ -1,0 +1,58 @@
+// mixins and screen sizes
+
+// dark theme
+@mixin dark-theme {
+  [data-theme='dark'] & {
+    @content
+  }
+}
+
+// for serif font
+@mixin serif-font {[data-font='serif'] & { @content }}
+
+// mobile phone mixins
+$phone: 700px;
+
+@mixin mobile-screen {
+  @media screen and (max-width: $phone) { @content }
+}
+
+// fonts
+:root {
+  // using CSS variables so they can be changed and used without import
+
+  --font-size: 18px;
+  @include mobile-screen { --font-size: 16px }
+
+  // paddings
+  --main-padding: 2em;
+  --side-padding: 2.5em;
+  --dense-padding: 1.5em;  //TODO: maybe change to 18?
+
+  --page-padding-side: 5%;
+  --page-padding: var(--main-padding) var(--page-padding-side);
+  // top: 2em, side: 5%
+  --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+
+  @include mobile-screen {
+    --main-padding: 1.5em;
+    --side-padding: 2em;
+    --dense-padding: 1em;
+  }
+
+  // borders 
+  --main-border: 1px solid #ccc;
+
+  // inputs
+  --input-padding: 0.5em;
+  --input-border-radius: 0.3em;
+  --input-text-color: #555;
+
+
+  // font colors
+  --button-text-color: #eee;
+  [data-theme="dark"] {
+    --button-text-color: #222;
+  }
+ 
+}

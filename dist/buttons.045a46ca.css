@@ -1,0 +1,131 @@
+button, input[type=submit], a.button {
+  padding: var(--input-padding);
+  border-radius: var(--input-border-radius);
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  padding: var(--input-padding) calc(3 * var(--input-padding));
+  text-decoration: none;
+  color: unset;
+  border: none;
+  background-color: #417af7;
+  color: var(--button-text-color);
+  transition: 0.2s;
+}
+button:hover, input[type=submit]:hover, a.button:hover {
+  opacity: 0.95;
+  transform: translateY(-0.05em);
+}
+button:active, input[type=submit]:active, a.button:active {
+  opacity: 0.9;
+}
+button:focus, input[type=submit]:focus, a.button:focus {
+  outline: none;
+}
+button.blue, input[type=submit].blue, a.button.blue {
+  background-color: #417af7;
+}
+button.blue.outline, input[type=submit].blue.outline, a.button.blue.outline {
+  border: 1px solid #417af7;
+  color: #417af7;
+  background-color: transparent;
+}
+button.blue.outline:hover, input[type=submit].blue.outline:hover, a.button.blue.outline:hover {
+  background-color: #417af7;
+}
+button.green, input[type=submit].green, a.button.green {
+  background-color: #02b056;
+}
+button.green.outline, input[type=submit].green.outline, a.button.green.outline {
+  border: 1px solid #02b056;
+  color: #02b056;
+  background-color: transparent;
+}
+button.green.outline:hover, input[type=submit].green.outline:hover, a.button.green.outline:hover {
+  background-color: #02b056;
+}
+button.yellow, input[type=submit].yellow, a.button.yellow {
+  background-color: #fda900;
+}
+button.yellow.outline, input[type=submit].yellow.outline, a.button.yellow.outline {
+  border: 1px solid #fda900;
+  color: #fda900;
+  background-color: transparent;
+}
+button.yellow.outline:hover, input[type=submit].yellow.outline:hover, a.button.yellow.outline:hover {
+  background-color: #fda900;
+}
+button.red, input[type=submit].red, a.button.red {
+  background-color: #e52723;
+}
+button.red.outline, input[type=submit].red.outline, a.button.red.outline {
+  border: 1px solid #e52723;
+  color: #e52723;
+  background-color: transparent;
+}
+button.red.outline:hover, input[type=submit].red.outline:hover, a.button.red.outline:hover {
+  background-color: #e52723;
+}
+button.purple, input[type=submit].purple, a.button.purple {
+  background-color: #9c4fdd;
+}
+button.purple.outline, input[type=submit].purple.outline, a.button.purple.outline {
+  border: 1px solid #9c4fdd;
+  color: #9c4fdd;
+  background-color: transparent;
+}
+button.purple.outline:hover, input[type=submit].purple.outline:hover, a.button.purple.outline:hover {
+  background-color: #9c4fdd;
+}
+button.pink, input[type=submit].pink, a.button.pink {
+  background-color: #f96495;
+}
+button.pink.outline, input[type=submit].pink.outline, a.button.pink.outline {
+  border: 1px solid #f96495;
+  color: #f96495;
+  background-color: transparent;
+}
+button.pink.outline:hover, input[type=submit].pink.outline:hover, a.button.pink.outline:hover {
+  background-color: #f96495;
+}
+button.white, input[type=submit].white, a.button.white {
+  background-color: #fffffe;
+}
+button.white.outline, input[type=submit].white.outline, a.button.white.outline {
+  border: 1px solid #fffffe;
+  color: #fffffe;
+  background-color: transparent;
+}
+button.white.outline:hover, input[type=submit].white.outline:hover, a.button.white.outline:hover {
+  background-color: #fffffe;
+}
+button.gray, input[type=submit].gray, a.button.gray {
+  background-color: #b9c2cc;
+}
+button.gray.outline, input[type=submit].gray.outline, a.button.gray.outline {
+  border: 1px solid #b9c2cc;
+  color: #b9c2cc;
+  background-color: transparent;
+}
+button.gray.outline:hover, input[type=submit].gray.outline:hover, a.button.gray.outline:hover {
+  background-color: #b9c2cc;
+}
+button.black, input[type=submit].black, a.button.black {
+  background-color: #222;
+}
+button.black.outline, input[type=submit].black.outline, a.button.black.outline {
+  border: 1px solid #222;
+  color: #222;
+  background-color: transparent;
+}
+button.black.outline:hover, input[type=submit].black.outline:hover, a.button.black.outline:hover {
+  background-color: #222;
+}
+button .black, input[type=submit] .black, a.button .black {
+  color: #eee;
+}
+button + button, button + input[type=submit], button + a.button, input[type=submit] + button, input[type=submit] + input[type=submit], input[type=submit] + a.button, a.button + button, a.button + input[type=submit], a.button + a.button {
+  margin-left: 0.7em;
+}
+
+/*# sourceMappingURL=/buttons.045a46ca.css.map */

@@ -1,0 +1,11 @@
+
+
+// inputs are buttons or text boxes
+@mixin input {
+  padding: var(--input-padding);
+  border-radius: var(--input-border-radius);
+
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}

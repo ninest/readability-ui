@@ -1,4 +1,4 @@
-# [Readability UI](https://themindstorm.github.io/readability-ui/)
+# [Readability UI](https://ninest.github.io/readability-ui/)
 > Simple CSS boilerplate
 
 ## Includes

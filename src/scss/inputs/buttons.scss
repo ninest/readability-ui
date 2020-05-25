@@ -1,0 +1,74 @@
+@import './main.scss';
+@import '../colors.scss';
+
+@mixin button {
+  @include input;
+
+  // more hor padding for buttons
+  padding: var(--input-padding) calc(3 * var(--input-padding));
+}
+
+// styling buttons
+button, input[type=submit], a.button {
+  @include button;
+
+  // no underline, no blue for link buttons
+  text-decoration: none;
+  color: unset;
+
+  border: none;
+
+  // default
+  background-color: $blue; 
+  color: var(--button-text-color);
+
+  // animations
+  transition: 0.2s;
+  
+  &:hover {
+    opacity: 0.95;
+    // button jump up on hover
+    transform: translateY(-0.05em);
+  }
+
+  &:active {
+    opacity: 0.90;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+
+  // coloring butts
+  @each $current-color in $color-list {
+    // finding index of color (ex: $blue: #417af7;) in the $color-list
+    // this will be used to find the appropriate name to name the class
+    $i: index($color-list, $current-color);
+    $color-name: nth($color-names, $i);
+    &.#{$color-name} {
+      background-color: $current-color;
+      
+      // ghost/outline buttons
+      &.outline {
+        border: 1px solid $current-color;
+        color: $current-color;
+        background-color: transparent;
+
+        // they are fully colored when focused/hoverd
+        &:hover {
+          background-color: $current-color;
+        }
+      }
+    }
+  }
+
+  .black {
+    color: #eee;
+  }
+
+  & + & {
+    margin-left: 0.7em;
+  }
+
+}

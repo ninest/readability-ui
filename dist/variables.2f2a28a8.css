@@ -1,0 +1,31 @@
+:root {
+  --font-size: 18px;
+  --main-padding: 2em;
+  --side-padding: 2.5em;
+  --dense-padding: 1.5em;
+  --page-padding-side: 5%;
+  --page-padding: var(--main-padding) var(--page-padding-side);
+  --page-dense-padding: var(--dense-padding) var(--page-padding-side);
+  --main-border: 1px solid #ccc;
+  --input-padding: 0.5em;
+  --input-border-radius: 0.3em;
+  --input-text-color: #555;
+  --button-text-color: #eee;
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --font-size: 16px ;
+  }
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --main-padding: 1.5em;
+    --side-padding: 2em;
+    --dense-padding: 1em;
+  }
+}
+:root [data-theme=dark] {
+  --button-text-color: #222;
+}
+
+/*# sourceMappingURL=/variables.2f2a28a8.css.map */
